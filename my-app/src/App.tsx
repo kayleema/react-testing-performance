@@ -6,6 +6,16 @@ function App() {
     return (<>
             {Array.from({length: 300}, (_, i) => (
                 <Fragment key={i}>
+
+                    {/*<label>{"simpletext" + i}<input/></label>*/}
+
+
+                    {/*<label htmlFor={"simpletextid" + i}>*/}
+                    {/*    {"simpletextsidebyside" + i}*/}
+                    {/*</label>*/}
+                    {/*<input id={"simpletextid" + i}/>*/}
+
+
                     <TextField
                         id = {"textid" + i}
                         label={"text" + i}
@@ -13,13 +23,6 @@ function App() {
                         variant="outlined"
                         defaultValue={"value" + i}
                     />
-
-                    {/*<label>{"simpletext" + i}<input/></label>*/}
-
-                    {/*<label htmlFor={"simpletextid" + i}>*/}
-                    {/*    {"simpletextsidebyside" + i}*/}
-                    {/*</label>*/}
-                    {/*<input id={"simpletextid" + i}/>*/}
                 </Fragment>
             ))}
     </>)

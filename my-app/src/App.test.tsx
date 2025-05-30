@@ -8,29 +8,16 @@ test('「Hello Test」が描画されている', () => {
     render(<App/>)
     console.timeEnd("render")
 
-    // console.time("getsimplelabel")
+    // console.time("getsimplelabel_nested")
     // expect(screen.getByLabelText('simpletext8')).toBeInTheDocument()
-    // console.timeEnd("getsimplelabel")
+    // console.timeEnd("getsimplelabel_nested")
 
-    // console.time("getsimplelabel2")
-    // expect(screen.getByLabelText('simpletextsidebyside8')).toBeInTheDocument()
-    // console.timeEnd("getsimplelabel2")
+    // console.time("getsimplelabel_sidebyside")
+    // expect(screen.getByLabelText('simpletextsidebyside')).toBeInTheDocument()
+    // console.timeEnd("getsimplelabel_sidebyside")
 
-    console.time("getlabel")
+    console.time("getlabelmaterial")
     expect(screen.getByLabelText('text8')).toBeInTheDocument()
-    console.timeEnd("getlabel")
+    console.timeEnd("getlabelmaterial")
 
-    // screen.getByText("label", {name: "text8"})
-
-    // console.time("gettestid")
-    // expect(screen.getByTestId('text8')).toBeInTheDocument()
-    // console.timeEnd("gettestid")
-
-    // console.time("getbyrole")
-    // expect(screen.getByRole('textbox', { name: 'text8' })).toBeInTheDocument()
-    // console.timeEnd("getbyrole")
-
-    // console.time("gettext")
-    // expect(screen.getByText('button 8')).toBeInTheDocument()
-    // console.timeEnd("gettext")
 }, { timeout: 60000 })
